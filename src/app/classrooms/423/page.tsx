@@ -1,9 +1,10 @@
 import { AppContainer } from "@/components/app-container";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Label } from "@/components/ui/label";
+import { InfoItem } from "@/components/info-item";
+import { SectionHeader } from "@/components/section-header";
+import { TechSpecCard } from "@/components/tech-spec-card";
+import { TechTag } from "@/components/tech-tag";
 import { RiCodeLine, RiComputerLine, RiExternalLinkLine, RiGamepadLine, RiGlassesLine, RiGraduationCapLine, RiMapPin5Line, RiStarLine } from "@remixicon/react";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Page() {
 	return (
@@ -18,103 +19,46 @@ export default function Page() {
 				</div>
 				<div className={"py-5 flex flex-col gap-8"}>
 					<section>
-						<div className={"mb-4"}>
-							<Label>
-								<RiComputerLine className={"size-4"} />
-								Оснащение
-							</Label>
-						</div>
+						<SectionHeader icon={<RiComputerLine className={"size-4"} />}>Оснащение</SectionHeader>
 						<div className={"grid grid-cols-1 sm:grid-cols-3 gap-4"}>
-							<Card size="sm">
-								<CardHeader>
-									<RiGlassesLine className={"size-5"} />
-									<CardTitle>VR/AR очки</CardTitle>
-								</CardHeader>
-								<CardContent className={"text-sm text-muted-foreground"}>HTC Vive, Oculus Rift, Meta Quest 2, PlayStation 4 и другое</CardContent>
-							</Card>
-							<Card size="sm">
-								<CardHeader>
-									<RiComputerLine className={"size-5"} />
-									<CardTitle>Рабочие станции</CardTitle>
-								</CardHeader>
-								<CardContent className={"text-sm text-muted-foreground"}>2 монитора · Intel i9 · 32GB RAM · RTX 2070 Super</CardContent>
-							</Card>
+							<TechSpecCard icon={<RiGlassesLine className={"size-5"} />} title={"VR/AR очки"}>
+								HTC Vive, Oculus Rift, Meta Quest 2, PlayStation 4 и другое
+							</TechSpecCard>
+							<TechSpecCard icon={<RiComputerLine className={"size-5"} />} title={"Рабочие станции"}>
+								2 монитора · Intel i9 · 32GB RAM · RTX 2070 Super
+							</TechSpecCard>
 						</div>
 					</section>
 					<section>
-						<div className={"mb-4"}>
-							<Label>
-								<RiMapPin5Line className={"size-4"} />
-								Как найти?
-							</Label>
-						</div>
+						<SectionHeader icon={<RiMapPin5Line className={"size-4"} />}>Как найти?</SectionHeader>
 						<div>
 							<div className={"aspect-video max-h-60 w-full bg-muted rounded-md animate-pulse"}>SVG карта окружения</div>
 						</div>
 					</section>
 					<section>
-						<div className={"mb-4"}>
-							<Label>О программе</Label>
-						</div>
+						<SectionHeader>О программе</SectionHeader>
 						<div className={"grid grid-cols-1 sm:grid-cols-2 divide-y"}>
-							<div className={"flex gap-3 bg-muted p-4 sm:border-r"}>
-								<RiGraduationCapLine className={"size-4 mt-0.5 shrink-0 text-muted-foreground"} />
-								<div>
-									<p className={"font-medium"}>Специализации</p>
-									<p className={"text-sm text-muted-foreground"}>Design vizual și animație, Dezvoltare aplicații XR</p>
-								</div>
-							</div>
-							<div className={"flex gap-3 bg-muted p-4"}>
-								<RiGamepadLine className={"size-4 mt-0.5 shrink-0 text-muted-foreground"} />
-								<div>
-									<p className={"font-medium mb-2"}>Игровые движки</p>
-									<p className={"text-muted-foreground flex items-center flex-wrap gap-2"}>
-										<span className={"text-sm flex items-center gap-1 leading-0"}>
-											<Image className={"block size-3.5"} src={"/unity.svg"} alt={"Unity icon"} width={16} height={16} />
-											Unity,
-										</span>
-										<span className={"text-sm flex items-center gap-1 leading-0"}>
-											<Image className={"block size-4"} src={"/ue-icon.svg"} alt={"Unreal Engine icon"} width={16} height={16} />
-											Unreal Engine
-										</span>
-									</p>
-								</div>
-							</div>
-							<div className={"flex gap-3 bg-muted p-4"}>
-								<RiStarLine className={"size-4 mt-0.5 shrink-0 text-muted-foreground"} />
-								<div>
-									<p className={"font-medium"}>Ключевые курсы</p>
-									<p className={"text-sm text-muted-foreground"}>3D-моделирование, VR/AR разработка, гейм-дизайн, шейдеры, виртуальное производство</p>
-								</div>
-							</div>
-							<div className={"flex gap-3 bg-muted p-4 sm:border-r"}>
-								<RiCodeLine className={"size-4 mt-0.5 shrink-0 text-muted-foreground"} />
-								<div>
-									<p className={"font-medium mb-2"}>Инструменты</p>
-									<p className={"text-muted-foreground flex items-center flex-wrap gap-2"}>
-										<span className={"text-sm flex items-center gap-1 leading-0"}>
-											<Image className={"block size-4"} src={"/blender.png"} alt={"Blender icon"} width={16} height={16} />
-											Blender,
-										</span>
-										<span className={"text-sm flex items-center gap-1 leading-0"}>
-											<Image className={"block size-3.5"} src={"/autodesk-maya.png"} alt={"Autodesk Maya icon"} width={16} height={16} />
-											Maya,
-										</span>
-										<span className={"text-sm flex items-center gap-1 leading-0"}>
-											<Image className={"block size-3.5"} src={"/steam.svg"} alt={"Steam icon"} width={16} height={16} />
-											SteamVR,
-										</span>
-										<span className={"text-sm flex items-center gap-1 leading-0"}>
-											<Image className={"block size-3.5"} src={"/vuforia.svg"} alt={"Vuforia icon"} width={16} height={16} />
-											Vuforia,
-										</span>
-										<span className={"text-sm flex items-center gap-1 leading-0"}>
-											<Image className={"block size-3.5"} src={"/adobe-suite.svg"} alt={"Adobe Suite icon"} width={16} height={16} />
-											Adobe Suite
-										</span>
-									</p>
-								</div>
-							</div>
+							<InfoItem icon={<RiGraduationCapLine className={"size-4"} />} title={"Специализации"} className={"sm:border-r"}>
+								Design vizual și animație, Dezvoltare aplicații XR
+							</InfoItem>
+							<InfoItem icon={<RiGamepadLine className={"size-4"} />} title={"Игровые движки"} titleClass={"mb-2"}>
+								<p className={"text-muted-foreground flex items-center flex-wrap gap-2"}>
+									<TechTag src={"/unity.svg"} alt={"Unity icon"} name={"Unity"} imgClass={"size-3.5"} />
+									<TechTag src={"/ue-icon.svg"} alt={"Unreal Engine icon"} name={"Unreal Engine"} imgClass={"size-4"} comma={false} />
+								</p>
+							</InfoItem>
+							<InfoItem icon={<RiStarLine className={"size-4"} />} title={"Ключевые курсы"} className={"sm:border-r"}>
+								3D-моделирование, VR/AR разработка, гейм-дизайн, шейдеры, виртуальное производство
+							</InfoItem>
+							<InfoItem icon={<RiCodeLine className={"size-4"} />} title={"Инструменты"} titleClass={"mb-2"}>
+								<p className={"text-muted-foreground flex items-center flex-wrap gap-2"}>
+									<TechTag src={"/blender.png"} alt={"Blender icon"} name={"Blender"} imgClass={"size-4"} />
+									<TechTag src={"/autodesk-maya.png"} alt={"Autodesk Maya icon"} name={"Maya"} imgClass={"size-3.5"} />
+									<TechTag src={"/steam.svg"} alt={"Steam icon"} name={"SteamVR"} imgClass={"size-3.5"} />
+									<TechTag src={"/vuforia.svg"} alt={"Vuforia icon"} name={"Vuforia"} imgClass={"size-3.5"} />
+									<TechTag src={"/adobe-suite.svg"} alt={"Adobe Suite icon"} name={"Adobe Suite"} imgClass={"size-3.5"} comma={false} />
+								</p>
+							</InfoItem>
 						</div>
 					</section>
 				</div>

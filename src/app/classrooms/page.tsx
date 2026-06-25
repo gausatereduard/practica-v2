@@ -19,45 +19,45 @@ export default function Page() {
 						</div>
 						<div className={"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"}>
 							<Link href={"/classrooms/423"}>
-								<Card className={"bg-linear-to-b from-primary from-10% to-background"}>
+								<Card className={"h-full bg-linear-to-b from-primary from-10% to-background"}>
 									<CardContent>
 										<div className={"aspect-square w-64 mx-auto"}>
 											<Image className={"h-full object-cover object-center"} src={"/octopus-vr.png"} alt={"Playful octopus in VR gaming world"} width={300} height={300} />
 										</div>
 									</CardContent>
 									<CardHeader>
-										<CardTitle>
-											VR-Лаборатория <span className={"text-xs"}>aud. 423</span>
+										<CardTitle className={"leading-tight"}>
+											VR-Лаборатория <span className={"text-xs"}>aud.&nbsp;423</span>
 										</CardTitle>
 										<CardDescription>Designul Jocurilor (I, II, III)</CardDescription>
 									</CardHeader>
 								</Card>
 							</Link>
 							<Link href={"/classrooms/3XX"}>
-								<Card className={"bg-linear-to-b from-primary from-10% to-background"}>
+								<Card className={"h-full bg-linear-to-b from-primary from-10% to-background"}>
 									<CardContent>
 										<div className={"aspect-square w-64 mx-auto"}>
 											<Image className={"h-full object-cover object-center"} src={"/octopus-working.png"} alt={"Cute octopus working in workspace"} width={300} height={300} />
 										</div>
 									</CardContent>
 									<CardHeader>
-										<CardTitle>
-											Компьютерная лаборатория <span className={"text-xs"}>aud. 3XX</span>
+										<CardTitle className={"leading-tight"}>
+											Компьютерная лаборатория <span className={"text-xs"}>aud.&nbsp;3XX</span>
 										</CardTitle>
 										<CardDescription>Designul Jocurilor (I, II, III)</CardDescription>
 									</CardHeader>
 								</Card>
 							</Link>
 							<Link href={"/classrooms/145"}>
-								<Card className={"bg-linear-to-b from-primary from-10% to-background"}>
+								<Card className={"h-full bg-linear-to-b from-primary from-10% to-background"}>
 									<CardContent>
 										<div className={"aspect-square w-64 mx-auto"}>
 											<Image className={"h-full object-cover object-center"} src={"/octopus-classroom.png"} alt={"Octopus classroom"} width={300} height={300} />
 										</div>
 									</CardContent>
 									<CardHeader>
-										<CardTitle>
-											Innovation Lab <span className={"text-xs"}>aud. 145</span>
+										<CardTitle className={"leading-tight"}>
+											Innovation Lab <span className={"text-xs"}>aud.&nbsp;145</span>
 										</CardTitle>
 										<CardDescription>Designul Jocurilor, Informatica, Informatica Aplicata</CardDescription>
 									</CardHeader>
@@ -74,15 +74,15 @@ export default function Page() {
 						</div>
 						<div className={"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"}>
 							<Link href={"/classrooms/145"}>
-								<Card className={"bg-linear-to-b from-primary from-10% to-background"}>
+								<Card className={"h-full bg-linear-to-b from-primary from-10% to-background"}>
 									<CardContent>
 										<div className={"aspect-square w-64 mx-auto"}>
 											<Image className={"h-full object-cover object-center"} src={"/octopus-openspace.png"} alt={"Octopus in openspace"} width={300} height={300} />
 										</div>
 									</CardContent>
 									<CardHeader>
-										<CardTitle>
-											Open-Space <span className={"text-xs"}>aud. 254</span>
+										<CardTitle className={"leading-tight"}>
+											Open-Space <span className={"text-xs"}>aud.&nbsp;254</span>
 										</CardTitle>
 										<CardDescription>Designul Jocurilor, Informatica, Informatica Aplicata</CardDescription>
 									</CardHeader>
