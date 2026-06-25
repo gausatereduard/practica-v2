@@ -1,0 +1,97 @@
+import { AppContainer } from "@/components/app-container";
+import { Label } from "@/components/ui/label";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { RiFlaskLine, RiTeamLine } from "@remixicon/react";
+import Image from "next/image";
+import Link from "next/link";
+
+export default function Page() {
+	return (
+		<>
+			<AppContainer>
+				<div className={"py-5 flex flex-col gap-8"}>
+					<section>
+						<div className={"mb-2"}>
+							<Label>
+								<RiFlaskLine className={"size-4"} />
+								Лаборатории
+							</Label>
+						</div>
+						<div className={"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"}>
+							<Link href={"/classrooms/423"}>
+								<Card className={"bg-linear-to-b from-primary from-10% to-background"}>
+									<CardContent>
+										<div className={"aspect-square w-64 mx-auto"}>
+											<Image className={"h-full object-cover object-center"} src={"/octopus-vr.png"} alt={"Playful octopus in VR gaming world"} width={300} height={300} />
+										</div>
+									</CardContent>
+									<CardHeader>
+										<CardTitle>
+											VR-Лаборатория <span className={"text-xs"}>aud. 423</span>
+										</CardTitle>
+										<CardDescription>Designul Jocurilor (I, II, III)</CardDescription>
+									</CardHeader>
+								</Card>
+							</Link>
+							<Link href={"/classrooms/3XX"}>
+								<Card className={"bg-linear-to-b from-primary from-10% to-background"}>
+									<CardContent>
+										<div className={"aspect-square w-64 mx-auto"}>
+											<Image className={"h-full object-cover object-center"} src={"/octopus-working.png"} alt={"Cute octopus working in workspace"} width={300} height={300} />
+										</div>
+									</CardContent>
+									<CardHeader>
+										<CardTitle>
+											Компьютерная лаборатория <span className={"text-xs"}>aud. 3XX</span>
+										</CardTitle>
+										<CardDescription>Designul Jocurilor (I, II, III)</CardDescription>
+									</CardHeader>
+								</Card>
+							</Link>
+							<Link href={"/classrooms/145"}>
+								<Card className={"bg-linear-to-b from-primary from-10% to-background"}>
+									<CardContent>
+										<div className={"aspect-square w-64 mx-auto"}>
+											<Image className={"h-full object-cover object-center"} src={"/octopus-classroom.png"} alt={"Octopus classroom"} width={300} height={300} />
+										</div>
+									</CardContent>
+									<CardHeader>
+										<CardTitle>
+											Innovation Lab <span className={"text-xs"}>aud. 145</span>
+										</CardTitle>
+										<CardDescription>Designul Jocurilor, Informatica, Informatica Aplicata</CardDescription>
+									</CardHeader>
+								</Card>
+							</Link>
+						</div>
+					</section>
+					<section>
+						<div className={"mb-2"}>
+							<Label>
+								<RiTeamLine className={"size-4"} />
+								Open-Space
+							</Label>
+						</div>
+						<div className={"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"}>
+							<Link href={"/classrooms/145"}>
+								<Card className={"bg-linear-to-b from-primary from-10% to-background"}>
+									<CardContent>
+										<div className={"aspect-square w-64 mx-auto"}>
+											<Image className={"h-full object-cover object-center"} src={"/octopus-openspace.png"} alt={"Octopus in openspace"} width={300} height={300} />
+										</div>
+									</CardContent>
+									<CardHeader>
+										<CardTitle>
+											Open-Space <span className={"text-xs"}>aud. 254</span>
+										</CardTitle>
+										<CardDescription>Designul Jocurilor, Informatica, Informatica Aplicata</CardDescription>
+									</CardHeader>
+								</Card>
+							</Link>
+						</div>
+					</section>
+				</div>
+			</AppContainer>
+		</>
+	);
+}
