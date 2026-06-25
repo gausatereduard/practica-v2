@@ -1,5 +1,7 @@
 # AGENTS.md
 
+> make AGENTS.md opinionated and strict, but keep SOUL.md philosophical and stable. AGENTS changes as your stack evolves; SOUL should rarely change. This separation tends to produce much more consistent AI assistance across long-lived Next.js + Three.js + shadcn/ui projects.
+
 - Architecture: @ARCHITECTURE.md
 - Soul: @SOUL.md
 - Naming convention: @docs/conventions.md
