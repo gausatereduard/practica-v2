@@ -18,7 +18,7 @@ export default function Page() {
 							</Label>
 						</div>
 						<div className={"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"}>
-							<Link href={"/classrooms/423"}>
+							<Link href={"/classrooms/423"} className={"animate-[fadeIn_0.5s_ease-out_both]"} style={{ animationDelay: "0.1s" }}>
 								<Card className={"h-full bg-linear-to-b from-accent from-10% to-background"}>
 									<CardContent>
 										<div className={"aspect-square mx-auto"}>
@@ -33,7 +33,7 @@ export default function Page() {
 									</CardHeader>
 								</Card>
 							</Link>
-							<Link href={"/classrooms/350"}>
+							<Link href={"/classrooms/350"} className={"animate-[fadeIn_0.5s_ease-out_both]"} style={{ animationDelay: "0.2s" }}>
 								<Card className={"h-full bg-linear-to-b from-accent from-10% to-background"}>
 									<CardContent>
 										<div className={"aspect-square mx-auto"}>
@@ -54,7 +54,7 @@ export default function Page() {
 									</CardHeader>
 								</Card>
 							</Link>
-							<Link href={"/classrooms/145"}>
+							<Link href={"/classrooms/145"} className={"animate-[fadeIn_0.5s_ease-out_both]"} style={{ animationDelay: "0.3s" }}>
 								<Card className={"h-full bg-linear-to-b from-accent from-10% to-background"}>
 									<CardContent>
 										<div className={"aspect-square mx-auto"}>
@@ -79,7 +79,7 @@ export default function Page() {
 							</Label>
 						</div>
 						<div className={"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"}>
-							<Link href={"/classrooms/254"}>
+							<Link href={"/classrooms/254"} className={"animate-[fadeIn_0.5s_ease-out_both]"} style={{ animationDelay: "0.4s" }}>
 								<Card className={"h-full bg-linear-to-b from-accent from-10% to-background"}>
 									<CardContent>
 										<div className={"aspect-square mx-auto"}>
@@ -95,7 +95,7 @@ export default function Page() {
 								</Card>
 							</Link>
 
-							<Card className={"lg:col-span-2 h-full bg-background/70"}>
+							<Card className={"lg:col-span-2 h-full bg-background/70 animate-[fadeIn_0.5s_ease-out_both]"} style={{ animationDelay: "0.5s" }}>
 								<CardHeader>
 									<CardTitle className={"leading-tight"}>Поступление</CardTitle>
 									<CardDescription>Подача документов и информация о департаменте</CardDescription>
@@ -114,6 +114,13 @@ export default function Page() {
 										</Link>
 									</p>
 								</CardContent>
+								<Image
+									className={"z-[-1] opacity-10 absolute top-10 sm:opacity-20 sm:bottom-0 sm:top-auto -left-20"}
+									src={"/octopus-walking.png"}
+									alt={"Octopus Walking"}
+									width={300}
+									height={300}
+								/>
 							</Card>
 						</div>
 					</section>
