@@ -56,8 +56,7 @@ export function VrLabScene() {
 				<meshStandardMaterial color={DARK_GRAY} />
 			</mesh>
 			<mesh position={[0, -0.44, 0]} rotation={[-Math.PI / 2, 0, 0]}>
-				<planeGeometry args={[3, 2.5]} />
-				<meshStandardMaterial color="#1a1a1a" />
+				<planeGeometry args={[9, 9]} />
 			</mesh>
 		</group>
 	);

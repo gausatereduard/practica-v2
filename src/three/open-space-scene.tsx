@@ -24,8 +24,7 @@ export function OpenSpaceScene() {
 				<meshStandardMaterial color="#8B4513" />
 			</mesh>
 			<mesh position={[0, -0.4, 0]} rotation={[-Math.PI / 2, 0, 0]}>
-				<planeGeometry args={[2.5, 2]} />
-				<meshStandardMaterial color="#1a1a1a" />
+				<planeGeometry args={[9, 9]} />
 			</mesh>
 		</group>
 	);

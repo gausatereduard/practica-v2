@@ -21,7 +21,7 @@ export default function Page() {
 						</div>
 						<div className={"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"}>
 							<Link href={"/classrooms/423"}>
-								<Card className={"h-full bg-linear-to-b from-primary from-10% to-background"}>
+								<Card className={"h-full bg-linear-to-b from-accent from-10% to-background"}>
 									<CardContent>
 										<div className={"aspect-square mx-auto"}>
 											<Image className={"w-full h-full object-cover object-center"} src={"/octopus-vr.png"} alt={"Playful octopus in VR gaming world"} width={300} height={300} />
@@ -36,7 +36,7 @@ export default function Page() {
 								</Card>
 							</Link>
 							<Link href={"/classrooms/350"}>
-								<Card className={"h-full bg-linear-to-b from-primary from-10% to-background"}>
+								<Card className={"h-full bg-linear-to-b from-accent from-10% to-background"}>
 									<CardContent>
 										<div className={"aspect-square mx-auto"}>
 											<Image
@@ -57,7 +57,7 @@ export default function Page() {
 								</Card>
 							</Link>
 							<Link href={"/classrooms/145"}>
-								<Card className={"h-full bg-linear-to-b from-primary from-10% to-background"}>
+								<Card className={"h-full bg-linear-to-b from-accent from-10% to-background"}>
 									<CardContent>
 										<div className={"aspect-square mx-auto"}>
 											<Image className={"w-full h-full object-cover object-center"} src={"/octopus-classroom.png"} alt={"Octopus classroom"} width={300} height={300} />
@@ -82,7 +82,7 @@ export default function Page() {
 						</div>
 						<div className={"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"}>
 							<Link href={"/classrooms/254"}>
-								<Card className={"h-full bg-linear-to-b from-primary from-10% to-background"}>
+								<Card className={"h-full bg-linear-to-b from-accent from-10% to-background"}>
 									<CardContent>
 										<div className={"aspect-square mx-auto"}>
 											<Image className={"w-full h-full object-cover object-center"} src={"/octopus-openspace.png"} alt={"Octopus in openspace"} width={300} height={300} />
@@ -96,6 +96,14 @@ export default function Page() {
 									</CardHeader>
 								</Card>
 							</Link>
+
+							<Card className={"sm:col-span-2 h-full bg-background/70"}>
+								<CardHeader>
+									<CardTitle className={"leading-tight"}></CardTitle>
+									<CardDescription></CardDescription>
+								</CardHeader>
+								<CardContent>Информация о поступлении, ссылка на сайт департамента: it.usm.md, eadmitere.gov.md - гос сайт для подачи документов</CardContent>
+							</Card>
 						</div>
 					</section>
 				</div>

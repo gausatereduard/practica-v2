@@ -3,11 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { cn } from "@/lib/utils";
 import "./globals.css";
 
-const geistSans = Geist({
-	variable: "--font-sans",
-	display: "swap",
-	subsets: ["latin", "cyrillic"],
-});
+const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
 const geistMono = Geist_Mono({
 	variable: "--font-mono",
@@ -23,7 +19,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
 	return (
-		<html lang="en" className={cn("h-full antialiased font-sans overflow-x-hidden", geistMono.variable, geistSans.variable)} suppressHydrationWarning>
+		<html lang="en" className={cn("h-full antialiased font-sans overflow-x-hidden", geistMono.variable, "font-sans", geist.variable)} suppressHydrationWarning>
 			<body className="min-h-full flex flex-col circuits-bg">{children}</body>
 		</html>
 	);
