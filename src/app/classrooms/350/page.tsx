@@ -2,7 +2,9 @@ import { AppContainer } from "@/components/app-container";
 import { InfoItem } from "@/components/info-item";
 import { SectionHeader } from "@/components/section-header";
 import { TechSpecCard } from "@/components/tech-spec-card";
-import { RiComputerLine, RiExternalLinkLine, RiGraduationCapLine, RiImageLine, RiMapPin5Line, RiPaletteLine, RiStarLine } from "@remixicon/react";
+import { ThreeCanvas } from "@/components/threejs-canvas";
+import { ComputerLabScene } from "@/three/computer-lab-scene";
+import { RiBox3Line, RiComputerLine, RiExternalLinkLine, RiGraduationCapLine, RiStarLine } from "@remixicon/react";
 import Link from "next/link";
 
 export default function Page() {
@@ -29,19 +31,10 @@ export default function Page() {
 						</div>
 					</section>
 					<section>
-						<SectionHeader icon={<RiImageLine className={"size-4"} />}>Фото</SectionHeader>
-						<div className={"grid grid-cols-2 lg:grid-cols-4 gap-4"}>
-							<div className={"aspect-video bg-muted rounded-md animate-pulse"} />
-							<div className={"aspect-video bg-muted rounded-md animate-pulse"} />
-							<div className={"aspect-video bg-muted rounded-md animate-pulse"} />
-							<div className={"aspect-video bg-muted rounded-md animate-pulse"} />
-						</div>
-					</section>
-					<section>
-						<SectionHeader icon={<RiMapPin5Line className={"size-4"} />}>Как найти?</SectionHeader>
-						<div>
-							<div className={"aspect-video max-h-60 w-full bg-muted rounded-md animate-pulse"}>SVG карта окружения</div>
-						</div>
+						<SectionHeader icon={<RiBox3Line className={"size-4"} />}>3D Тур</SectionHeader>
+						<ThreeCanvas className={"h-[350px] w-full rounded-lg"}>
+							<ComputerLabScene />
+						</ThreeCanvas>
 					</section>
 					<section>
 						<SectionHeader>О программе</SectionHeader>

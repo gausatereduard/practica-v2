@@ -3,7 +3,9 @@ import { InfoItem } from "@/components/info-item";
 import { SectionHeader } from "@/components/section-header";
 import { TechSpecCard } from "@/components/tech-spec-card";
 import { TechTag } from "@/components/tech-tag";
-import { RiCodeLine, RiComputerLine, RiExternalLinkLine, RiGamepadLine, RiGlassesLine, RiGraduationCapLine, RiImageLine, RiMapPin5Line, RiStarLine } from "@remixicon/react";
+import { ThreeCanvas } from "@/components/threejs-canvas";
+import { VrLabScene } from "@/three/vr-lab-scene";
+import { RiBox3Line, RiCodeLine, RiComputerLine, RiExternalLinkLine, RiGamepadLine, RiGlassesLine, RiGraduationCapLine, RiStarLine } from "@remixicon/react";
 import Link from "next/link";
 
 export default function Page() {
@@ -33,13 +35,10 @@ export default function Page() {
 						</div>
 					</section>
 					<section>
-						<SectionHeader icon={<RiImageLine className={"size-4"} />}>Фото</SectionHeader>
-						<div className={"grid grid-cols-2 lg:grid-cols-4 gap-4"}>
-							<div className={"aspect-video bg-muted rounded-md animate-pulse"} />
-							<div className={"aspect-video bg-muted rounded-md animate-pulse"} />
-							<div className={"aspect-video bg-muted rounded-md animate-pulse"} />
-							<div className={"aspect-video bg-muted rounded-md animate-pulse"} />
-						</div>
+						<SectionHeader icon={<RiBox3Line className={"size-4"} />}>3D Тур</SectionHeader>
+						<ThreeCanvas className={"h-[350px] w-full rounded-lg"}>
+							<VrLabScene />
+						</ThreeCanvas>
 					</section>
 					<section>
 						<SectionHeader>О программе</SectionHeader>

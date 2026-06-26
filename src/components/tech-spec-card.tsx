@@ -1,14 +1,15 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import type { ReactNode } from "react";
 
-export function TechSpecCard({ icon, title, children }: { icon: ReactNode; title: string; children: ReactNode }) {
+export function TechSpecCard({ icon, title, children, additions }: { icon: ReactNode; title: string; children: ReactNode; additions?: ReactNode }) {
 	return (
-		<Card size="sm">
+		<Card className={"relative z-10"} size="sm">
 			<CardHeader>
 				{icon}
 				<CardTitle>{title}</CardTitle>
 			</CardHeader>
 			<CardContent className={"text-sm text-muted-foreground"}>{children}</CardContent>
+			{additions}
 		</Card>
 	);
 }
