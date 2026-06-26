@@ -7,6 +7,7 @@ import { ThreeCanvas } from "@/components/threejs-canvas";
 import { VrLabScene } from "@/three/vr-lab-scene";
 import { RiBox3Line, RiCodeLine, RiComputerLine, RiExternalLinkLine, RiGamepadLine, RiGlassesLine, RiGraduationCapLine, RiStarLine } from "@remixicon/react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Page() {
 	return (
@@ -28,9 +29,11 @@ export default function Page() {
 						<div className={"grid grid-cols-1 sm:grid-cols-3 gap-4"}>
 							<TechSpecCard icon={<RiGlassesLine className={"size-5"} />} title={"VR/AR очки"}>
 								HTC Vive, Oculus Rift, Meta Quest 2, PlayStation 4 и другое
+								<Image className={"z-[-1] opacity-20 absolute top-0 right-0"} src={"/meta-quest.webp"} alt={"headset"} width={300} height={300} />
 							</TechSpecCard>
 							<TechSpecCard icon={<RiComputerLine className={"size-5"} />} title={"Рабочие станции"}>
 								2 монитора · Intel i9 · 32GB RAM · RTX 2070 Super
+								<Image className={"z-[-1] opacity-20 absolute top-0 right-0"} src={"/proart.webp"} alt={"headset"} width={300} height={300} />
 							</TechSpecCard>
 						</div>
 					</section>

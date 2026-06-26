@@ -8,8 +8,6 @@ import Link from "next/link";
 export default function Page() {
 	return (
 		<>
-			{/*<img src={"/tui.jpeg"} className={"w-auto h-auto absolute bottom-0 -left-40 z-[-1]"} />*/}
-			{/*<img src={"/tui.jpeg"} className={"w-auto h-auto absolute bottom-0 -right-40 z-[-1]"} />*/}
 			<AppContainer>
 				<div className={"py-5 flex flex-col gap-8"}>
 					<section>
@@ -97,12 +95,25 @@ export default function Page() {
 								</Card>
 							</Link>
 
-							<Card className={"sm:col-span-2 h-full bg-background/70"}>
+							<Card className={"lg:col-span-2 h-full bg-background/70"}>
 								<CardHeader>
-									<CardTitle className={"leading-tight"}></CardTitle>
-									<CardDescription></CardDescription>
+									<CardTitle className={"leading-tight"}>Поступление</CardTitle>
+									<CardDescription>Подача документов и информация о департаменте</CardDescription>
 								</CardHeader>
-								<CardContent>Информация о поступлении, ссылка на сайт департамента: it.usm.md, eadmitere.gov.md - гос сайт для подачи документов</CardContent>
+								<CardContent className={"flex flex-col gap-1.5"}>
+									<p>
+										Сайт факультета:{" "}
+										<Link href={"https://it.usm.md"} target={"_blank"} className={"underline underline-offset-2 hover:text-foreground"}>
+											it.usm.md
+										</Link>
+									</p>
+									<p>
+										Гос. портал для подачи документов:{" "}
+										<Link href={"https://eadmitere.gov.md"} target={"_blank"} className={"underline underline-offset-2 hover:text-foreground"}>
+											eadmitere.gov.md
+										</Link>
+									</p>
+								</CardContent>
 							</Card>
 						</div>
 					</section>

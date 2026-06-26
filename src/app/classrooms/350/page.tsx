@@ -6,6 +6,7 @@ import { ThreeCanvas } from "@/components/threejs-canvas";
 import { ComputerLabScene } from "@/three/computer-lab-scene";
 import { RiBox3Line, RiComputerLine, RiExternalLinkLine, RiGraduationCapLine, RiStarLine } from "@remixicon/react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Page() {
 	return (
@@ -27,6 +28,7 @@ export default function Page() {
 						<div className={"grid grid-cols-1 sm:grid-cols-2 gap-4"}>
 							<TechSpecCard icon={<RiComputerLine className={"size-5"} />} title={"Рабочие станции"}>
 								Intel i7 · 32GB RAM · RTX 3070 Super
+								<Image className={"z-[-1] opacity-20 absolute top-0 right-0"} src={"/proart.webp"} alt={"headset"} width={300} height={300} />
 							</TechSpecCard>
 						</div>
 					</section>

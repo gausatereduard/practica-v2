@@ -29,7 +29,7 @@ export function ComputerLabScene() {
 			<Workstation position={[-0.75, -0.3, 0]} />
 			<Workstation position={[0, -0.3, 0]} />
 			<Workstation position={[0.75, -0.3, 0]} />
-			<mesh position={[0, -0.42, 0]} rotation={[-Math.PI / 2, 0, 0]}>
+			<mesh position={[0, -0.75, 0]} rotation={[-Math.PI / 2, 0, 0]}>
 				<planeGeometry args={[9, 9]} />
 			</mesh>
 		</group>

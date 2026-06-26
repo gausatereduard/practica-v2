@@ -6,6 +6,7 @@ import { ThreeCanvas } from "@/components/threejs-canvas";
 import { InnovationLabScene } from "@/three/innovation-lab-scene";
 import { RiBox3Line, RiCalendarEventLine, RiComputerLine, RiDiscussLine, RiExternalLinkLine, RiGraduationCapLine, RiProjectorLine, RiSofaLine } from "@remixicon/react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Page() {
 	return (
@@ -35,12 +36,15 @@ export default function Page() {
 						<div className={"grid grid-cols-1 sm:grid-cols-3 gap-4"}>
 							<TechSpecCard icon={<RiComputerLine className={"size-5"} />} title={"Моноблоки"}>
 								All-in-one ПК для студентов
+								<Image className={"z-[-1] opacity-20 absolute top-0 -right-16"} src={"/proart.webp"} alt={"headset"} width={300} height={300} />
 							</TechSpecCard>
 							<TechSpecCard icon={<RiProjectorLine className={"size-5"} />} title={"Мультимедиа"}>
 								Стенд для презентаций, большой экран, интерактивная доска
+								<Image className={"z-[-1] opacity-20 absolute top-0 -right-16"} src={"/projector.png"} alt={"headset"} width={300} height={300} />
 							</TechSpecCard>
 							<TechSpecCard icon={<RiSofaLine className={"size-5"} />} title={"Зона отдыха"}>
 								Пуфики для неформальной работы и обсуждений
+								<Image className={"z-[-1] opacity-20 absolute top-0 -right-16 hue-rotate-180"} src={"/puffic.png"} alt={"headset"} width={300} height={300} />
 							</TechSpecCard>
 						</div>
 					</section>

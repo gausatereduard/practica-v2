@@ -6,6 +6,7 @@ import { ThreeCanvas } from "@/components/threejs-canvas";
 import { OpenSpaceScene } from "@/three/open-space-scene";
 import { RiBox3Line, RiDiscussLine, RiExternalLinkLine, RiGraduationCapLine, RiProjectorLine, RiSofaLine, RiTeamLine } from "@remixicon/react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Page() {
 	return (
@@ -35,9 +36,11 @@ export default function Page() {
 						<div className={"grid grid-cols-1 sm:grid-cols-2 gap-4"}>
 							<TechSpecCard icon={<RiProjectorLine className={"size-5"} />} title={"Мультимедиа"}>
 								Интерактивная доска, проектор
+								<Image className={"z-[-1] opacity-20 absolute top-0 -right-16"} src={"/projector.png"} alt={"headset"} width={300} height={300} />
 							</TechSpecCard>
 							<TechSpecCard icon={<RiSofaLine className={"size-5"} />} title={"Зона отдыха"}>
 								Пуфики для обсуждений и неформальной работы
+								<Image className={"z-[-1] opacity-20 absolute top-0 -right-16 hue-rotate-180"} src={"/puffic.png"} alt={"headset"} width={300} height={300} />
 							</TechSpecCard>
 						</div>
 					</section>

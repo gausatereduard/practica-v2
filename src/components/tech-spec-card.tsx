@@ -8,7 +8,7 @@ export function TechSpecCard({ icon, title, children, additions }: { icon: React
 				{icon}
 				<CardTitle>{title}</CardTitle>
 			</CardHeader>
-			<CardContent className={"text-sm text-muted-foreground"}>{children}</CardContent>
+			<CardContent className={"text-sm text-foreground"}>{children}</CardContent>
 			{additions}
 		</Card>
 	);
