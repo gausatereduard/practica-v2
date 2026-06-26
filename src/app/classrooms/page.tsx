@@ -8,6 +8,8 @@ import Link from "next/link";
 export default function Page() {
 	return (
 		<>
+			{/*<img src={"/tui.jpeg"} className={"w-auto h-auto absolute bottom-0 -left-40 z-[-1]"} />*/}
+			{/*<img src={"/tui.jpeg"} className={"w-auto h-auto absolute bottom-0 -right-40 z-[-1]"} />*/}
 			<AppContainer>
 				<div className={"py-5 flex flex-col gap-8"}>
 					<section>
@@ -17,42 +19,48 @@ export default function Page() {
 								Лаборатории
 							</Label>
 						</div>
-						<div className={"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"}>
+						<div className={"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"}>
 							<Link href={"/classrooms/423"}>
 								<Card className={"h-full bg-linear-to-b from-primary from-10% to-background"}>
 									<CardContent>
-										<div className={"aspect-square w-64 mx-auto"}>
-											<Image className={"h-full object-cover object-center"} src={"/octopus-vr.png"} alt={"Playful octopus in VR gaming world"} width={300} height={300} />
+										<div className={"aspect-square mx-auto"}>
+											<Image className={"w-full h-full object-cover object-center"} src={"/octopus-vr.png"} alt={"Playful octopus in VR gaming world"} width={300} height={300} />
 										</div>
 									</CardContent>
 									<CardHeader>
 										<CardTitle className={"leading-tight"}>
 											VR-Лаборатория <span className={"text-xs"}>aud.&nbsp;423</span>
 										</CardTitle>
-										<CardDescription>Designul Jocurilor (I, II, III)</CardDescription>
+										<CardDescription>Designul Jocurilor</CardDescription>
 									</CardHeader>
 								</Card>
 							</Link>
-							<Link href={"/classrooms/3XX"}>
+							<Link href={"/classrooms/350"}>
 								<Card className={"h-full bg-linear-to-b from-primary from-10% to-background"}>
 									<CardContent>
-										<div className={"aspect-square w-64 mx-auto"}>
-											<Image className={"h-full object-cover object-center"} src={"/octopus-working.png"} alt={"Cute octopus working in workspace"} width={300} height={300} />
+										<div className={"aspect-square mx-auto"}>
+											<Image
+												className={"w-full h-full object-cover object-center"}
+												src={"/octopus-working.png"}
+												alt={"Cute octopus working in workspace"}
+												width={300}
+												height={300}
+											/>
 										</div>
 									</CardContent>
 									<CardHeader>
 										<CardTitle className={"leading-tight"}>
-											Компьютерная лаборатория <span className={"text-xs"}>aud.&nbsp;3XX</span>
+											Компьютерная лаборатория <span className={"text-xs"}>aud.&nbsp;350</span>
 										</CardTitle>
-										<CardDescription>Designul Jocurilor (I, II, III)</CardDescription>
+										<CardDescription>Designul Jocurilor</CardDescription>
 									</CardHeader>
 								</Card>
 							</Link>
 							<Link href={"/classrooms/145"}>
 								<Card className={"h-full bg-linear-to-b from-primary from-10% to-background"}>
 									<CardContent>
-										<div className={"aspect-square w-64 mx-auto"}>
-											<Image className={"h-full object-cover object-center"} src={"/octopus-classroom.png"} alt={"Octopus classroom"} width={300} height={300} />
+										<div className={"aspect-square mx-auto"}>
+											<Image className={"w-full h-full object-cover object-center"} src={"/octopus-classroom.png"} alt={"Octopus classroom"} width={300} height={300} />
 										</div>
 									</CardContent>
 									<CardHeader>
@@ -72,12 +80,12 @@ export default function Page() {
 								Open-Space
 							</Label>
 						</div>
-						<div className={"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"}>
-							<Link href={"/classrooms/145"}>
+						<div className={"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"}>
+							<Link href={"/classrooms/254"}>
 								<Card className={"h-full bg-linear-to-b from-primary from-10% to-background"}>
 									<CardContent>
-										<div className={"aspect-square w-64 mx-auto"}>
-											<Image className={"h-full object-cover object-center"} src={"/octopus-openspace.png"} alt={"Octopus in openspace"} width={300} height={300} />
+										<div className={"aspect-square mx-auto"}>
+											<Image className={"w-full h-full object-cover object-center"} src={"/octopus-openspace.png"} alt={"Octopus in openspace"} width={300} height={300} />
 										</div>
 									</CardContent>
 									<CardHeader>

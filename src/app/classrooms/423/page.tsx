@@ -3,7 +3,7 @@ import { InfoItem } from "@/components/info-item";
 import { SectionHeader } from "@/components/section-header";
 import { TechSpecCard } from "@/components/tech-spec-card";
 import { TechTag } from "@/components/tech-tag";
-import { RiCodeLine, RiComputerLine, RiExternalLinkLine, RiGamepadLine, RiGlassesLine, RiGraduationCapLine, RiMapPin5Line, RiStarLine } from "@remixicon/react";
+import { RiCodeLine, RiComputerLine, RiExternalLinkLine, RiGamepadLine, RiGlassesLine, RiGraduationCapLine, RiImageLine, RiMapPin5Line, RiStarLine } from "@remixicon/react";
 import Link from "next/link";
 
 export default function Page() {
@@ -12,10 +12,13 @@ export default function Page() {
 			<AppContainer>
 				<div className={"pt-5"}>
 					<h1 className={"text-2xl font-semibold"}>Virtual Reality</h1>
-					<Link className={"text-sm font-medium flex items-center gap-2"} href={"https://it.usm.md/specialties/designul-jocurilor"} target={"_blank"}>
-						Designul Jocurilor (I, II, III anul)
-						<RiExternalLinkLine className={"size-4"} />
-					</Link>
+					<p className={"text-xs text-muted-foreground mt-0.5"}>aud. 423</p>
+					<div className={"flex flex-wrap gap-x-3 gap-y-1 mt-2"}>
+						<Link className={"text-sm font-medium flex items-center gap-1"} href={"https://it.usm.md/specialties/designul-jocurilor"} target={"_blank"}>
+							Designul Jocurilor
+							<RiExternalLinkLine className={"size-3.5"} />
+						</Link>
+					</div>
 				</div>
 				<div className={"py-5 flex flex-col gap-8"}>
 					<section>
@@ -30,9 +33,12 @@ export default function Page() {
 						</div>
 					</section>
 					<section>
-						<SectionHeader icon={<RiMapPin5Line className={"size-4"} />}>Как найти?</SectionHeader>
-						<div>
-							<div className={"aspect-video max-h-60 w-full bg-muted rounded-md animate-pulse"}>SVG карта окружения</div>
+						<SectionHeader icon={<RiImageLine className={"size-4"} />}>Фото</SectionHeader>
+						<div className={"grid grid-cols-2 lg:grid-cols-4 gap-4"}>
+							<div className={"aspect-video bg-muted rounded-md animate-pulse"} />
+							<div className={"aspect-video bg-muted rounded-md animate-pulse"} />
+							<div className={"aspect-video bg-muted rounded-md animate-pulse"} />
+							<div className={"aspect-video bg-muted rounded-md animate-pulse"} />
 						</div>
 					</section>
 					<section>

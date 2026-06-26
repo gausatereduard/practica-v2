@@ -2,6 +2,7 @@ import { AppContainer } from "@/components/app-container";
 import { Button } from "@/components/ui/button";
 import { RiArrowLeftLine } from "@remixicon/react";
 import Link from "next/link";
+import Image from "next/image";
 
 export function AppHeader() {
 	return (
@@ -14,8 +15,8 @@ export function AppHeader() {
 						</Link>
 					</Button>
 					<div className={"flex items-center justify-center gap-2"}>
-						<img src={"https://placehold.co/20x24"} alt={"USM logo"} />
-						<p className={"text-sm font-[550]"}>Universitatea de Stat</p>
+						<Image src={"/usm.png"} alt={"USM logo"} width={20} height={24} />
+						<p className={"text-sm font-semibold"}>Universitatea de Stat</p>
 					</div>
 					<div className={"size-8"}></div>
 				</div>
