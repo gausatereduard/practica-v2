@@ -14,7 +14,7 @@ export default function Page() {
 			<AppContainer>
 				<div className={"pt-5"}>
 					<h1 className={"text-2xl font-semibold"}>Компьютерная лаборатория</h1>
-					<p className={"text-xs text-muted-foreground mt-0.5"}>aud. 350</p>
+					<p className={"text-xs text-muted-foreground mt-0.5"}>aud.&nbsp;350; aud.&nbsp;251; aud.&nbsp;326</p>
 					<div className={"flex flex-wrap gap-x-3 gap-y-1 mt-2"}>
 						<Link className={"text-sm font-medium flex items-center gap-1"} href={"https://it.usm.md/specialties/designul-jocurilor"} target={"_blank"}>
 							Designul Jocurilor
@@ -40,7 +40,7 @@ export default function Page() {
 					</section>
 					<section>
 						<SectionHeader>О программе</SectionHeader>
-						<div className={"grid grid-cols-1 sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x"}>
+						<div className={"grid grid-cols-1 sm:grid-cols-2 gap-4"}>
 							<InfoItem icon={<RiGraduationCapLine className={"size-4"} />} title={"Направления"}>
 								Гейм-дизайн, Визуальный дизайн, 3D-моделирование
 							</InfoItem>

@@ -4,7 +4,7 @@ import { SectionHeader } from "@/components/section-header";
 import { TechSpecCard } from "@/components/tech-spec-card";
 import { TechTag } from "@/components/tech-tag";
 import { ThreeCanvas } from "@/components/threejs-canvas";
-import { VrLabScene } from "@/three/vr-lab-scene";
+import { Classroom423Scene } from "@/three/classroom-423-scene";
 import { RiBox3Line, RiCodeLine, RiComputerLine, RiExternalLinkLine, RiGamepadLine, RiGlassesLine, RiGraduationCapLine, RiStarLine } from "@remixicon/react";
 import Link from "next/link";
 import Image from "next/image";
@@ -26,9 +26,9 @@ export default function Page() {
 				<div className={"py-5 flex flex-col gap-8"}>
 					<section>
 						<SectionHeader icon={<RiComputerLine className={"size-4"} />}>Оснащение</SectionHeader>
-						<div className={"grid grid-cols-1 sm:grid-cols-3 gap-4"}>
+						<div className={"grid grid-cols-1 sm:grid-cols-2 gap-4"}>
 							<TechSpecCard icon={<RiGlassesLine className={"size-5"} />} title={"VR/AR очки"}>
-								HTC Vive, Oculus Rift, Meta Quest 2, PlayStation 4 и другое
+								HTC Vive, Oculus Rift, Meta Quest 2/3, PlayStation 4 и другое
 								<Image className={"z-[-1] opacity-20 absolute top-0 right-0"} src={"/meta-quest.webp"} alt={"headset"} width={300} height={300} />
 							</TechSpecCard>
 							<TechSpecCard icon={<RiComputerLine className={"size-5"} />} title={"Рабочие станции"}>
@@ -39,14 +39,14 @@ export default function Page() {
 					</section>
 					<section>
 						<SectionHeader icon={<RiBox3Line className={"size-4"} />}>3D Тур</SectionHeader>
-						<ThreeCanvas className={"h-[350px] w-full rounded-lg"}>
-							<VrLabScene />
+						<ThreeCanvas className={"h-[350px] w-full rounded-lg"} camera={{ position: [-4, 4, 8], fov: 50 }}>
+							<Classroom423Scene />
 						</ThreeCanvas>
 					</section>
 					<section>
 						<SectionHeader>О программе</SectionHeader>
-						<div className={"grid grid-cols-1 sm:grid-cols-2 divide-y"}>
-							<InfoItem icon={<RiGraduationCapLine className={"size-4"} />} title={"Специализации"} className={"sm:border-r"}>
+						<div className={"grid grid-cols-1 sm:grid-cols-2 gap-4"}>
+							<InfoItem icon={<RiGraduationCapLine className={"size-4"} />} title={"Специализации"}>
 								Design vizual și animație, Dezvoltare aplicații XR
 							</InfoItem>
 							<InfoItem icon={<RiGamepadLine className={"size-4"} />} title={"Игровые движки"} titleClass={"mb-2"}>
@@ -55,7 +55,7 @@ export default function Page() {
 									<TechTag src={"/ue-icon.svg"} alt={"Unreal Engine icon"} name={"Unreal Engine"} imgClass={"size-4"} comma={false} />
 								</p>
 							</InfoItem>
-							<InfoItem icon={<RiStarLine className={"size-4"} />} title={"Ключевые курсы"} className={"sm:border-r"}>
+							<InfoItem icon={<RiStarLine className={"size-4"} />} title={"Ключевые курсы"}>
 								3D-моделирование, VR/AR разработка, гейм-дизайн, шейдеры, виртуальное производство
 							</InfoItem>
 							<InfoItem icon={<RiCodeLine className={"size-4"} />} title={"Инструменты"} titleClass={"mb-2"}>

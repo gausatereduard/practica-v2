@@ -56,7 +56,7 @@ export default function Page() {
 					</section>
 					<section>
 						<SectionHeader>О пространстве</SectionHeader>
-						<div className={"grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x"}>
+						<div className={"grid grid-cols-1 sm:grid-cols-3 gap-4"}>
 							<InfoItem icon={<RiGraduationCapLine className={"size-4"} />} title={"Программы"}>
 								Informatica, Informatica Aplicata, Designul Jocurilor
 							</InfoItem>
