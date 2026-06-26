@@ -19,7 +19,7 @@ export default function Page() {
 						</div>
 						<div className={"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"}>
 							<Link href={"/classrooms/423"} className={"animate-[fadeIn_0.5s_ease-out_both]"} style={{ animationDelay: "0.1s" }}>
-								<Card className={"h-full bg-linear-to-b from-accent from-10% to-background"}>
+								<Card className={"h-full bg-linear-to-b from-accent from-10% to-transparent"}>
 									<CardContent>
 										<div className={"aspect-square mx-auto"}>
 											<Image className={"w-full h-full object-cover object-center"} src={"/octopus-vr.png"} alt={"Playful octopus in VR gaming world"} width={300} height={300} />
@@ -103,13 +103,13 @@ export default function Page() {
 								<CardContent className={"flex flex-col gap-1.5"}>
 									<p>
 										Сайт факультета:{" "}
-										<Link href={"https://it.usm.md"} target={"_blank"} className={"underline underline-offset-2 hover:text-foreground"}>
+										<Link href={"https://it.usm.md"} target={"_blank"} className={"font-mono underline underline-offset-2 hover:text-foreground"}>
 											it.usm.md
 										</Link>
 									</p>
 									<p>
 										Гос. портал для подачи документов:{" "}
-										<Link href={"https://eadmitere.gov.md"} target={"_blank"} className={"underline underline-offset-2 hover:text-foreground"}>
+										<Link href={"https://eadmitere.gov.md"} target={"_blank"} className={"font-mono underline underline-offset-2 hover:text-foreground"}>
 											eadmitere.gov.md
 										</Link>
 									</p>
