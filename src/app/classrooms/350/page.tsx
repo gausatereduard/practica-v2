@@ -3,10 +3,10 @@ import { InfoItem } from "@/components/info-item";
 import { SectionHeader } from "@/components/section-header";
 import { TechSpecCard } from "@/components/tech-spec-card";
 import { ThreeCanvas } from "@/components/threejs-canvas";
-import { ComputerLabScene } from "@/three/computer-lab-scene";
 import { RiBox3Line, RiComputerLine, RiExternalLinkLine, RiGraduationCapLine, RiStarLine } from "@remixicon/react";
 import Link from "next/link";
 import Image from "next/image";
+import { Classroom350Scene } from "@/three/classroom-350-scene";
 
 export default function Page() {
 	return (
@@ -34,8 +34,8 @@ export default function Page() {
 					</section>
 					<section>
 						<SectionHeader icon={<RiBox3Line className={"size-4"} />}>3D Тур</SectionHeader>
-						<ThreeCanvas className={"h-[350px] w-full rounded-lg"}>
-							<ComputerLabScene />
+						<ThreeCanvas className={"h-[350px] w-full rounded-lg"} camera={{ position: [8, 4, 7], fov: 50 }}>
+							<Classroom350Scene />
 						</ThreeCanvas>
 					</section>
 					<section>
